@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>NFZ BANKING</title>
+</head>
+<body>
+    <div class="row" style="width: 100%;    height: min-content;
+    min-height: 100vh;">
+        <div class="col-sm-3" style="height: min-content;
+        min-height: 100vh;">
+          <div class="card" style="height: min-content;
+          min-height: 100vh;">
+            <div class="card-body">
+                <nav class="nav flex-column">
+                    <div class="container">
+                        <a class="navbar-brand text-muted" href="#">
+                          <img src="../img/nfz-letter-logo-design-with-white-background-in-illustrator-vector-logo-modern-alphabet-font-overlap-style-calligraphy-designs-for-logo-poster-invitation-etc-700-258740442.jpg" alt="" width="100" height="80">BAN<span class="fw-bold text-dark">KING</span>
+                        </a>
+                      </div>
+                      <div id="links-items">
+                        <a class="nav-link text-muted fs-5 fw-bold mt-4 nav-custom-hover py-3" href="#" id="dashboard-nav">DashBoard</a>
+                        <a class="nav-link text-muted fs-5 fw-bold mt-4 nav-custom-hover py-3"  href="#" id="deposite-nav">Diposite</a>
+                        <a class="nav-link text-muted fs-5 fw-bold mt-4 nav-custom-hover py-3" href="#" id="withdraw-nav">Withdraw</a>
+                        <a class="nav-link text-muted fs-5 fw-bold mt-4 nav-custom-hover py-3" href="#" id="profile-nav">Profile</a>
+                      </div>
+                  </nav>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="card" style="height: 100%;">
+            <div class="card-body">
+                <div class="header d-flex justify-content-end align-items-baseline gap-3 me-4" style="height: 40px;">
+                    <div class="signUp-btn  " >
+                        <button type="button" id="signup-page-btn" class="btn text-muted px-0" style="font-size:16px;"><span  class="text-muted fw-bold" style="text-decoration:underline ;">Log Out</span></button>
+                    </div>
+                    <div class="profile-pic-btn">
+                        <button type="button" class="btn"><i class="fa-solid fa-user "></i></button>
+                    </div>
+                </div>
+                <div id="main-body">
+
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="https://kit.fontawesome.com/23c828fab0.js" crossorigin="anonymous"></script>
+    <script type="module" src="dashboardFun.js"></script>
+    <script type="module" src="./dashboard.js"></script>
+    <script type="module" src="depositeFun.js"></script>
+    <script type="module" src="./deposite.js"></script>
+    <script type="module" src="withDrawFun.js"></script>
+    <script type="module" src="./withdraw.js"></script>
+    <script type="module" src="profileFun.js"></script>
+    <script type="module" src="./profile.js"></script>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
