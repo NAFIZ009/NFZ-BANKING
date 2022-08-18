@@ -39,7 +39,7 @@ function dashboardFun(params){
     <div class="card-body h-100">
     <h2 class="fw-bold text-danger">OFFER</h2>
     <h4 class="text-danger">Get Me A Job I will Sell My Bank To You</h4>
-    <p class="text-muted">Limited Time(this offer will end in 100years)</p>
+    <p class="text-muted">***Limited Time(this offer will end in 100years)</p>
     </div>
   </div>
 </div>
