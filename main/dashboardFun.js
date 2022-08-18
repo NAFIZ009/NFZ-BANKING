@@ -5,7 +5,7 @@ function dashboardFun(params){
     <div class="card h-100">
       <div class="card-body h-100">
       <label class="fw-bold d-block fs-5">Total Ammount</label>
-      <h4 class="my-4">$<span class="fw-bold">1200</span></h4>
+      <h4 class="my-4">$<span class="fw-bold" id='totalmalCarrier'>1200</span></h4>
       <p class="text-success">+1.2% Credit For Using <span class="fw-bold text-dark">NFZ</span><span class="text-muted">BAN</span><span class="fw-bold text-dark">KING</span></p>
       </div>
     </div>
@@ -15,7 +15,7 @@ function dashboardFun(params){
   <div class="card h-100">
     <div class="card-body h-100">
     <label class="fw-bold d-block fs-5">Last Withdraw </label>
-    <h4 class="my-4">$<span class="fw-bold">0</span></h4>
+    <h4 class="my-4">$<span class="fw-bold" id='dashboardwd'>0</span></h4>
     <p class="text-success">Per Withdraw You Can Get +0.22% Credit From <span class="fw-bold text-dark">NFZ</span><span class="text-muted">BAN</span><span class="fw-bold text-dark">KING</span></p>
     </div>
   </div>
