@@ -1,3 +1,4 @@
+import {valueCarrier,valueImplimentor}from './function.js';
 import {dashboardHtml} from './dashboard.js';
 import {depositeHtml} from './deposite.js';
 import {withDrawHtml} from './withDraw.js';
@@ -16,21 +17,42 @@ function navCustom(joinElement) {
         }
     }
 }
+let dPositeV;
+let wIthV;
+let dPositeBtnClick=0;
+let wIthVBtnClick=0;
 
 document.addEventListener('DOMContentLoaded',function(e) {
     dashboardHtml('main-body');
     navCustom(document.getElementById('dashboard-nav'));
 })
+document.getElementById('brand-btn').addEventListener('click', function(e) {
+    dashboardHtml('main-body');
+    navCustom(document.getElementById('dashboard-nav'));
+});
 document.getElementById('dashboard-nav').addEventListener('click', function(e) {
     dashboardHtml('main-body');
+    if (dPositeV!=document.getElementById("dashboarddepo").innerHTML) {
+        document.getElementById("dashboarddepo").innerHTML=dPositeV;
+    }
     navCustom(e.target);
 });
 document.getElementById('deposite-nav').addEventListener('click', function(e) {
     depositeHtml('main-body');
+    document.getElementById('dBtn').addEventListener('click', function(e) {
+        let value=valueCarrier('dInput');
+        valueImplimentor('dAmmountShow',value);
+        dPositeV=value;
+    });
     navCustom(e.target);
 });
 document.getElementById('withdraw-nav').addEventListener('click', function(e) {
     withDrawHtml('main-body');
+    document.getElementById('wBtn').addEventListener('click', function(e) {
+        let value=valueCarrier('wInput');
+        valueImplimentor('wAmmountShow',value);
+        wIthV=value;
+    });
     navCustom(e.target);
 });
 document.getElementById('profile-nav').addEventListener('click', function(e) {

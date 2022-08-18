@@ -5,10 +5,10 @@ function withDrawFun(params) {
     <div class="card h-100">
       <div class="card-body h-100">
         <label class="fw-bold d-block fs-5">Withdraw Now</label>
-        <input class="mt-4" placeholder="Enter Withdraw Ammount" type="number">
+        <input class="mt-4" placeholder="Enter Withdraw Ammount" id='wInput' type="number">
         <p class="text-danger mt-3 d-none">You Don't Have Enough Balance</p>
         <p class="text-success mt-3 d-none">Your Withdraw is Done</p>
-        <button type="button" class="btn btn-secondary d-block mt-3">Withdraw</button>
+        <button type="button" class="btn btn-secondary d-block mt-3" id='wBtn'>Withdraw</button>
       </div>
     </div>
   </div>
@@ -17,7 +17,7 @@ function withDrawFun(params) {
   <div class="card h-100">
     <div class="card-body h-100">
     <label class="fw-bold d-block fs-5">Last Withdraw </label>
-    <h4 class="my-4">$<span class="fw-bold">0</span></h4>
+    <h4 class="my-4">$<span class="fw-bold" id='wAmmountShow'>0</span></h4>
     <p class="text-success">Per Withdraw You Can Get +0.22% Credit From <span class="fw-bold text-dark">NFZ</span><span class="text-muted">BAN</span><span class="fw-bold text-dark">KING</span></p>
     </div>
   </div>

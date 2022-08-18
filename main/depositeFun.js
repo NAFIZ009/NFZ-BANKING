@@ -1,3 +1,5 @@
+import {valueCarrier,valueImplimentor} from './function.js';
+
 function depositeFun(params) {
     return `
     <div class="row justify-content-evenly" style="height:210px">
@@ -5,9 +7,9 @@ function depositeFun(params) {
     <div class="card h-100">
       <div class="card-body h-100">
         <label class="fw-bold d-block fs-5">Deposite Now</label>
-        <input class="mt-4" placeholder="Enter Deposite Ammount" type="number">
+        <input class="mt-4" placeholder="Enter Deposite Ammount" id='dInput' type="number">
         <p class="text-success mt-3 d-none">Your Deposite is Done</p>
-        <button type="button" class="btn btn-secondary d-block mt-3">Deposite</button>
+        <button type="button" class="btn btn-secondary d-block mt-3" id='dBtn'>Deposite</button>
       </div>
     </div>
   </div>
@@ -28,7 +30,7 @@ function depositeFun(params) {
     <div class="card h-100">
       <div class="card-body h-100">
       <label class="fw-bold d-block fs-5">Last Deposite </label>
-      <h4 class="my-4">$<span class="fw-bold">0</span></h4>
+      <h4 class="my-4">$<span class="fw-bold" id='dAmmountShow'>0</span></h4>
       <p class="text-success">Per Deposite You Can Get +0.5% Credit From <span class="fw-bold text-dark">NFZ</span><span class="text-muted">BAN</span><span class="fw-bold text-dark">KING</span></p>
       </div>
     </div>
